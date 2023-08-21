@@ -1,10 +1,9 @@
 run_analysis<-function()
 {
-  library(data.table)
   library(dplyr)
   #checking to see if the file exist alreayd
   
-  filename<-"UCI HAR Dataset/train/X_train.txt"
+  filename<-"dataset.zip"
   if (!file.exists(filename)){
     url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
     download.file(url, filename, method="curl")
